@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập JavaScript buổi 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mt-5 text-center">
+            <h3>BÀI TẬP JAVASCRIPT BUỔI 4</h3>
+        </div>
+        <div class="row mt-5 justify-content-around">
+            <div class="col-sm-2 text-center">
+                <button class="btn btn-success" id="btnBai1">Bài 1</button>
+            </div>
+            <div class="col-sm-2 text-center">
+                <button class="btn btn-success" id="btnBai2">Bài 2</button>
+            </div>
+            <div class="col-sm-2 text-center">
+                <button class="btn btn-success" id="btnBai3">Bài 3</button>
+            </div>
+            <div class="col-sm-2 text-center">
+                <button class="btn btn-success" id="btnBai4">Bài 4</button>
+            </div>
+        </div>
+
+        <!-- Bài tập 1:  Xuất 3 số theo thứ tự tăng dần-->
+        <div class="row mt-4" style="display: none;" id="bai1">
+            <div class="col-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-success text-white text-center title">Bài 1: Xuất 3 số theo thứ tự tăng
+                        dần
+                    </div>
+                    <div class="card-body">
+                        <div class=" form-group ">
+                            <input class="form-control" id="num1" placeholder="Nhập số thứ 1">
+                            <input class="form-control mt-2" id="num2" placeholder="Nhập số thứ 2">
+                            <input class="form-control mt-2" id="num3" placeholder="Nhập số thứ 3">
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-success" id="sapXep">Sắp Xếp</button>
+                            <button class="btn btn-danger ml-2" id="reset1">Reset</button>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input class="form-control" id="resultBai1" placeholder="Kết quả">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài tập 2: Chương trình "Chào hỏi" -->
+        <div class="row mt-4" style="display: none;" id="bai2">
+            <div class="col-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-success text-white text-center title">Bài 2: Chương trình "Chào hỏi"
+                    </div>
+                    <div class="card-body row justify-content-between">
+                        <select class="col-7 form-control ml-3" id="sayHi">
+                            <option value="">Chọn thành viên</option>
+                            <option value="B">Bố</option>
+                            <option value="M">Mẹ</option>
+                            <option value="A">Anh trai</option>
+                            <option value="E">Em gái</option>
+                        </select>
+                        <div class="col-4 text-right">
+                            <button class="btn btn-success " id="hi">Gửi lời chào</button>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-3">
+                        <input class="form-control" id="resultBai2" placeholder="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài tập 3: Đếm số chẳn lẻ -->
+        <div class="row mt-4" style="display: none;" id="bai3">
+            <div class="col-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-success text-white text-center title">Bài 3: Đếm số chẳn lẻ</div>
+                    <div class="card-body">
+                        <div class=" form-group ">
+                            <input class="form-control" id="so1" placeholder="Nhập số thứ 1">
+                            <input class="form-control mt-2" id="so2" placeholder="Nhập số thứ 2">
+                            <input class="form-control mt-2" id="so3" placeholder="Nhập số thứ 3">
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-success" id="countNum">Đếm</button>
+                            <button class="btn btn-danger ml-2" id="reset3">Reset</button>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input class="form-control" id="resultBai3" placeholder="Kết quả">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài tập 4: Đoán hình tam giác -->
+        <div class="row mt-4" style="display: none;" id="bai4">
+            <div class="col-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-success text-white text-center title">Bài 4: Đoán hình tam giác</div>
+                    <div class="card-body">
+                        <div class=" form-group ">
+                            <input class="form-control" id="edge1" placeholder="Nhập độ dài cạnh 1">
+                            <input class="form-control mt-2" id="edge2" placeholder="Nhập độ dài cạnh 2">
+                            <input class="form-control mt-2" id="edge3" placeholder="Nhập độ dài cạnh 3">
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-success" id="btnGuess">Dự đoán</button>
+                            <button class="btn btn-danger ml-2" id="reset4">Reset</button>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input class="form-control" id="resultBai4" placeholder="Kết quả">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./index.js"></script>
+</body>
+
+</html>
